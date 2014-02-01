@@ -4,7 +4,7 @@
 # Mail can be specified either by path or by Messsage-ID; in the latter case
 # file lookup is performed using some mail indexing tool.
 #
-# Copyright: © 2009-2012 Stefano Zacchiroli <zack@upsilon.cc>
+# Copyright: © 2009-2014 Stefano Zacchiroli <zack@upsilon.cc>
 # License: GNU General Public License (GPL), version 3 or above
 
 # requires: notmuch | maildir-utils >= 0.7
