@@ -1,5 +1,6 @@
 ;; standard org <-> remember stuff, RTFM
 (require 'org-capture)
+(require 'org-protocol)
 
 (setq org-default-notes-file "~/org/gtd.org")
 
