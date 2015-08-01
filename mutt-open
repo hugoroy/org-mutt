@@ -71,5 +71,5 @@ fi
 # might be some terminal-related issue here, since also waiting for an input
 # with "read" similarly "solves" the problem
 sleep 0.1
-mutt_keys="/=i$msgid\n\n$HIDE_SIDEBAR_CMD"
+mutt_keys="<vfolder-from-query>id:$msgid\n\n<entire-thread>"
 exec $MUTT $MUTT_FLAGS -f "$maildir/" -e "push $mutt_keys"
