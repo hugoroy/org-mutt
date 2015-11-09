@@ -17,7 +17,8 @@ $msg->head->get('message-id') =~ /^<(.*)>$/;
 my $mid = $1;
 my $subject = $msg->head->get('subject') || "";
 my $from = $msg->head->get('from') || "";
+my $to = $msg->head->get('to') || "";
 chomp ($subject, $from);
-my $note_body = uri_escape("  Subject: $subject\n    From: $from");
+my $note_body = uri_escape("  Subject: $subject\n    From: $from\n    To $to");
 
 exec "emacsclient", "-t", "org-protocol:/capture:/m/mutt:$mid/mail/$note_body";
